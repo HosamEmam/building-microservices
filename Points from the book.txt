@@ -1,0 +1,37 @@
+Chapter 1: What are Microservices?
+----------------------------------
+* Microservices at a Glance
+---------------------------
+- Microservices are independently releasable services that are modeled around a business domain. A service encapsulates functionality and makes it accessible to other services via networks—you construct a more complex system from these building blocks
+- Internal implementation details (such as the technology the service is written in or the way data is stored) are entirely hidden from the outside world
+- Microservice architectures avoid the use of shared databases in most circumstances; instead, each microservice encapsulates its own database where required.
+- Microservices embrace the concept of information hiding - Internal implementation
+- ARE SERVICE-ORIENTED ARCHITECTURE AND MICROSERVICES DIFFERENT THINGS?
+    - Service-oriented architecture (SOA) is a design approach in which multiple services collaborate to provide a certain end set of capabilities.Communication between these services occurs via calls across a network rather than method calls within a process boundary.
+    BUT
+    Many of the problems laid at the door of SOA are actually problems with things like communication protocols (e.g., SOAP), vendor middleware, a lack of guidance about service granularity, or the wrong guidance on picking places to split your system
+    - The microservice approach has emerged from real-world use, taking our better understanding of systems and architecture to do SOA well.(microservices as being a specific approach for SOA in the same way that Extreme Programming (XP) or Scrum is a specific approach for Agile software development.)
+
+* Key Concepts of Microservices
+--------------------------------
+- Independent Deployability:
+    - It is the idea that we can make a change to a microservice, deploy it, and release that change to our users, without having to deploy any other microservices.
+    - Ensure that you embrace the concept of independent deployability of your microservices. Get into the habit of deploying and releasing changes to a single microservice into production without having to deploy anything else. From this, many good things will follow.
+    - Some implementation choices make this difficult —the sharing of databases, for example, is especially problematic.
+- Modeled Around a Business Domain:
+    - By modeling services around business domains, we can make it easier to roll out new functionality and to recombine microservices in different ways to deliver new functionality to our users.
+- Owing Their Own State
+    - Hiding internal state in a microservice is analogous to the practice of encapsulation in object-oriented (OO) programming.
+    - Don’t share databases unless you really need to. And even then do everything you can to avoid it.
+    - Having a clean delineation between internal implementation detail and an external contract for a microservice can help reduce the need for backward-incompatible changes.
+- Size:
+    - "How big should a microservice be?" - Don't worry about size of each microservice
+    - Focus on two points
+        1- How many microservices can you handle? As you have more services, the complexity of your system will increase, and you’ll need to learn new skills (and perhaps adopt new technology) to cope with this.
+        2- How do you define microservice boundaries to get the most out of them, without everything becoming a horribly coupled mess? 
+- Flexibility:
+    - When you have more microservices, you have increased flexibility. But you likely ramp up the pain points too.
+    - This is yet another reason I strongly advocate incremental adoption of microservices. You are better able to assess the impact as you go, and to stop if required.
+- Alignment of Architecture and Organization:
+
+
