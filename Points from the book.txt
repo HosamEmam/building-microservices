@@ -33,5 +33,10 @@ Chapter 1: What are Microservices?
     - When you have more microservices, you have increased flexibility. But you likely ramp up the pain points too.
     - This is yet another reason I strongly advocate incremental adoption of microservices. You are better able to assess the impact as you go, and to stop if required.
 - Alignment of Architecture and Organization:
+    - We organize team in terms of the way we break our systems apart.
+    - Instead of dividing teams based on technologies (Frontend, Backend, DBAs teams), Divide them based on business domain (cusotmer team, purchase flow team and stock team).
+
+* The Monolith
+---------------
 
 
