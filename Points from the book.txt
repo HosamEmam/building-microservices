@@ -1,7 +1,7 @@
 Chapter 1: What are Microservices?
 ----------------------------------
 * Microservices at a Glance
----------------------------
+----------------------------
 - Microservices are independently releasable services that are modeled around a business domain. A service encapsulates functionality and makes it accessible to other services via networks—you construct a more complex system from these building blocks
 - Internal implementation details (such as the technology the service is written in or the way data is stored) are entirely hidden from the outside world
 - Microservice architectures avoid the use of shared databases in most circumstances; instead, each microservice encapsulates its own database where required.
